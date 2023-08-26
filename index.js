@@ -17,3 +17,24 @@ function fibonacciGenerator(n) {
 
 output = fibonacciGenerator(10);
 console.log(output);
+
+/* 
+Another solution
+
+let fibonacciGenerator = function (n) {
+  if (n === 0 || n === 1) return n;
+
+  let first = 0, second = 1;
+  let sum = first + second;
+
+  for (let i = 2; i < n; i++) {
+    first = second;
+    second = sum;
+
+    sum = first + second;
+  }
+
+  return sum
+};
+
+*/
